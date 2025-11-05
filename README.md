@@ -1,43 +1,59 @@
-# Number Guessing Game in C
+# 🎯 Number Guessing Game in C
 
-Project Objective
+## 📄 Project Overview
 
-This project involves the development of a number guessing game in C, aimed at practicing and consolidating basic programming concepts taught in class. The game generates a secret 4-digit number (between 1000 and 9999), and the player must guess it within 10 attempts.
+This project implements a **number guessing game** in the C programming language, designed to reinforce fundamental programming concepts. The game randomly generates a **4-digit secret number** (between 1000 and 9999), and the player has **10 attempts** to guess it correctly.
 
-After each attempt, the program provides feedback on how many digits are correct and in their correct positions. Starting from the fifth attempt, the game offers hints such as the parity of a digit (even or odd) and whether it is greater or less than/equal to 5, helping the player. At the end of a game, the player can choose to play again or exit.
+After each guess, the program provides feedback on how many digits are correct and in the correct position. Starting from the **fifth attempt**, the game introduces **progressive hints** to assist the player, such as digit parity (even/odd) and comparison to the number 5. At the end of each round, the player can choose to **restart or exit** the game.
 
-The project was developed by João Paulo Nunes Andrade, Caíque Andraus, Gabriel Oliveira, and João Victor Neder.
+Developed by **João Paulo Nunes Andrade**, **Caíque Andraus**, **Gabriel Oliveira**, and **João Victor Neder**.
 
-Implemented Features
+---
 
-Secret Number Generation: A random 4-digit number (between 1000 and 9999) is generated using rand() and srand(time(NULL)) to ensure unpredictability.
+## 🧠 Implemented Features
 
-Limited Attempts: The player has a maximum of 10 attempts to guess the number.
+- **🔢 Secret Number Generation**  
+  Uses `rand()` and `srand(time(NULL))` from `<stdlib.h>` and `<time.h>` to generate a random 4-digit number.
 
-Detailed Feedback: After each guess, the game displays how many digits are correct and in their correct positions.
+- **🎯 Limited Attempts**  
+  Players have up to 10 chances to guess the correct number.
 
-Hint System: From the fifth attempt onward, progressive hints are provided, such as the parity of an undiscovered digit (even or odd) and whether it is greater or less than/equal to 5.
+- **📊 Feedback System**  
+  Displays how many digits are correct and in the correct position after each guess.
 
-Interactive Interface: The game uses a textual interface with colors (via ANSI macros like #define RED, #define GRN, #define YEL) to improve user experience and highlight important messages.
+- **💡 Hint System**  
+  From the 5th attempt onward, provides hints such as:
+  - Parity (even or odd)
+  - Comparison (greater than or less than/equal to 5)
 
-Restart Option: At the end of each game, the player can choose to play again.
+- **🎨 Interactive Interface**  
+  Uses ANSI color macros (`#define RED`, `#define GRN`, `#define YEL`) to highlight messages and improve user experience.
 
-Code Structure and Applied Concepts
+- **🔁 Restart Option**  
+  Allows the player to choose whether to play again after each game.
 
-The project was built using only fundamental C commands, such as if, while, do-while, arithmetic operators, and integer variable manipulation, without using arrays or matrices (as required by the assignment).
+---
 
-Digit Manipulation: Division and modulo operations (/ and %) are used to extract and compare digits.
+## ⚙️ Technical Highlights
 
-Random Number Generation: The <stdlib.h> library with rand() and <time.h> with time() are used to generate the secret number, ensuring a new sequence in each execution.
+- **Language:** C (standard libraries only)
+- **Digit Manipulation:** Uses division (`/`) and modulo (`%`) to extract and compare digits
+- **Control Structures:** `if`, `while`, `do-while` for game logic and input validation
+- **Localization:** `setlocale(LC_ALL, "Portuguese")` from `<locale.h>` for proper character display
+- **Console Management:** `system("cls")` and `system("pause")` for screen clearing and user flow (OS-dependent)
 
-Localization: The function setlocale(LC_ALL, "Portuguese") from <locale.h> ensures correct display of Portuguese characters.
+---
 
-Flow Control: while and do-while loops manage the guessing attempts and input validation.
+## ▶️ How to Run
 
-Screen Clearing and Pause: The system("cls") and system("pause") commands are used for better console presentation and user experience (with awareness of their OS dependency).
+1. Save the code as `game.c`
+2. Compile using GCC
 
-This project demonstrates the ability to solve logical problems and handle data effectively using only the fundamentals of C programming.
+## 📬 Contact Me
 
-📬 Contact Me:
-
-<div align="center"> <a href="https://www.linkedin.com/in/nunes-andrade" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> <a href="https://instagram.com/jp_nunes.andrade" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a> <a href="mailto:jpnunesandrade26@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white"></a> <a href="https://api.whatsapp.com/send?phone=5519995837955" target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></a> <a href="https://www.alura.com.br/indica-dev/jpnunesandrade26" target="_blank"><img src="https://img.shields.io/badge/Alura-0077B5?style=for-the-badge&logo=alura&logoColor=white"></a> </div>
+<div align="center"> 
+  <a href="https://www.linkedin.com/in/nunes-andrade" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="https://instagram.com/jp_nunes.andrade" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
+  <a href="mailto:jpnunesandrade26@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white"></a>
+  <a href="https://www.alura.com.br/indica-dev/jpnunesandrade26" target="_blank"><img src="https://img.shields.io/badge/Alura-0077B5?style=for-the-badge&logo=alura&logoColor=white"></a> 
+</div>
